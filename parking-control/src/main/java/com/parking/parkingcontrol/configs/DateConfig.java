@@ -14,7 +14,7 @@ import java.time.format.DateTimeFormatter;
 public class DateConfig {
     public static final String DATETIME_FORMAT = "yyyy-MM-dd'T'HH:mm:ss'Z'";
     public static LocalDateTimeSerializer LOCAL_DATETIME_SERIALIZER = new LocalDateTimeSerializer(DateTimeFormatter.ofPattern(DATETIME_FORMAT));
-
+//dessa maneira, a data fica dentro dos padrões esperados UTC
     @Bean
     @Primary
     public ObjectMapper objectMapper() {
